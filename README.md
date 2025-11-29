@@ -1,10 +1,26 @@
 # Principal Component Analysis (PCA): Algorithms & Implementation
 
-This project provides a fundamental, from-scratch implementation of Principal Component Analysis (PCA). It focuses on the mathematical algorithms driving dimensionality reduction, specifically comparing **Eigen-decomposition** and **Singular Value Decomposition (SVD)**.
+## Objective: Implement Principal Component Analysis (PCA) using SVD/eigenvalue methods and visualize high-dimensional data.
 
-## Core Algorithms
+### Background: PCA finds orthogonal directions of maximum variance by diagonalizing the covariance matrix. Numerically, it is obtained via SVD of the centered data matrix.
 
-The primary goal is to dissect the logic behind PCA, using the Iris dataset merely as a vehicle for demonstration.
+#### Tasks:
+
+- Take a dataset (Iris, MNIST, etc.).
+- Standardize and center it.
+- Compute covariance and perform SVD/eigen-decomposition.
+- Project data onto top k components.
+- Visualize variance explained and reduced-dimension scatter plot.
+
+#### Deliverables:
+
+- Notebook with scree plot, scatter plots, and report on conditioning and interpretation.
+- Extensions: Compare SVD-based PCA with iterative PCA; apply to noise reduction.
+
+#### References:
+
+- I. T. Jolliffe, Principal Component Analysis, Springer, 2002.
+- C. Bishop, Pattern Recognition and Machine Learning, Springer, 2006.
 
 ### 1. Covariance & Eigen-decomposition
 
